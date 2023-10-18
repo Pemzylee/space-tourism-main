@@ -1,0 +1,945 @@
+@font-face {
+    font-family: "Barlow";
+    src: url(assets/Barlow/Barlow-Light.ttf);
+}
+
+@font-face {
+    font-family: "Bellefair";
+    src: url(assets/Bellefair/Bellefair-Regular.ttf);
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+#container {
+    background: url(assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    overflow: hidden;
+    margin: -8px;
+    height: 100vh;
+}
+
+header img {
+    position: relative;
+    left: 3%;
+    top: 33px;
+}
+
+.nav-bar {
+    background: rgba(255,255,255,0.04);
+    backdrop-filter: blur(4.77rem);
+    padding: 1% 0;
+    width: 58vw;
+    position: relative;
+    left: 41%;
+    bottom: 35px;
+}
+
+li a {
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.body-container h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: hsl(229, 24%, 87%);
+}
+
+.body-container h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 112px;
+    text-transform: uppercase;
+    font-weight: 400;
+    position: relative;
+    bottom: 70px;
+}
+
+.body-container p {
+    color: hsl(229, 24%, 87%);
+    padding-inline: 32.5%;
+    font-size: 20px;
+    right: 32.5%;
+    position: relative;
+    bottom: 131px;
+}
+
+.line {    
+    background-color: hsl(231, 11%, 63%);
+    height: 1px;
+    top: 5px;
+    position: relative;
+    width: 32vw;
+    left: 10%;
+    z-index: 300;
+}
+
+.body-container {
+    position: relative;
+    left: 10%;
+    top: 158px;
+}
+
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 18vw;
+    height: 35vh;
+    position: relative;
+    border-radius: 50%;
+    left: 49%;
+    border: none;
+    bottom: 13em;
+    cursor: pointer;
+}
+
+.nav-bar ul {
+    color: hsl(0, 0%, 100%);
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    cursor: pointer;
+}
+
+.nav-bar li {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 36px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.2s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    transform: scaleX(1); /* Scale the line back to its original size */
+}
+
+.active {
+    position: relative;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    top: 36px; /* Adjust this value for the desired spacing */
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid white;
+}
+
+.btn:hover
+{
+    box-shadow:0 0 0 5rem rgba(11,13,23,0.3);
+    transition: 0.5s;
+}
+
+.destination-container {
+    background: url(assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    overflow: hidden;
+    margin: -8px;
+    height: 100vh;
+}
+
+.sub-heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    left: 10%;
+}
+
+.sub-heading span {
+    color: #495057;
+    margin-right: 0.8rem;
+}
+
+.destination-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+
+.destination-nav a {
+    font-size: 17px;
+    letter-spacing: 2.7px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    left: 46rem;
+    padding: 1% 0;
+}
+
+.heading {
+    font-family: "Bellefair", serif;
+    font-size: 7em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    left: 48.4rem;
+    bottom: 68px;
+}
+
+.moon-description {
+    color: hsl(231, 77%, 90%);
+    padding-inline: 34.8%;
+    font-size: 20px;
+    left: 22%;
+    position: relative;
+    bottom: 96px;
+}
+.description {
+    position: relative;
+    bottom: 70%;
+}
+
+.line2 {
+    background-color: hsl(231, 11%, 63%);
+    height: 1px;
+    position: relative;
+    width: 32vw;
+    left: 56.8%;
+    bottom: 86px;
+}
+
+.days-time {
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    gap: 6rem;
+    font-size: 29px;
+    left: 59%;
+    position: relative;
+    bottom: 81px;
+    text-transform: uppercase;
+}
+
+.days-time h3 {
+    color: hsl(231, 77%, 90%);
+    font-size: 15px;
+}
+
+.time p {
+    position: relative;
+    bottom: 15%;
+    right: 12%;
+}
+
+.days p {
+    position: relative;
+    bottom: 15%;
+    left: 15%;
+}
+
+.img-moon {
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+
+.months {
+    position: relative;
+    bottom: 15%;
+}
+
+.years {
+    position: relative;
+    left: 8%;
+    bottom: 15%;
+}
+
+.crew-container {
+    background: url(assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    overflow: hidden;
+    margin: -8px;
+    height: 100vh;
+}
+
+.crew-container h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.crew-commander span, 
+.crew-pilot span,
+.crew-engineer span, .crew-specialist span {
+    color: #495057;
+}
+
+.crew-commander, .crew-pilot, .crew-specialist, .crew-engineer {
+    position: relative;
+    left: 10%;
+}
+
+.commander, .engineer, .pilot, .specialist h3 {
+    color: hsl(231, 77%, 90%);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.commander-description, .pilot-description, .specialist-description, .engineer-description {
+    color: hsl(231, 77%, 90%);
+    padding-inline: 33%;
+    font-size: 21px;
+    position: relative;
+    right: 33%;
+}
+
+.crew-container h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-family: 'Barlow';
+    color: hsl(0, 0%, 100%);
+}
+
+.crew-options {
+    display: flex;
+    gap: 1%;
+    position: relative;
+    left: 10%;
+    top: 50px;
+}
+
+.options-link {
+    height: 4vh;
+    width: 2vw;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #495057;
+    transition: all 0.2s;
+}
+
+.options-active {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.options-link:hover {
+    background-color: hsl(0, 0%, 100%);
+    transform: translateY(-2px) scale(1.05)
+}
+
+.crew-img img {
+    position: relative;
+    left: 64%;
+    bottom: 22px;
+    width: 31.5%;
+}
+
+.crew-description {
+    position: relative;
+    bottom: 86%;
+}
+
+.crew-pilot-img img {
+    position: relative;
+    left: 64%;
+    bottom: 21px;
+    width: 36vw;
+}
+
+.crew-engineer-img img {
+    position: relative;
+    left: 64%;
+    bottom: 22px;
+    width: 41vw;
+}
+
+.engineer-description p {
+    margin-inline: -5%;
+    position: relative;
+    left: 5%;
+}
+
+.technology-container {
+    background: url(assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    overflow: hidden;
+    margin: -8px;
+    height: 100vh;
+}
+
+.tech-options {
+    width: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border: 1px solid #495057;
+    text-decoration: none;
+    transition: all 0.2s;
+    color: hsl(0, 0%, 100%);
+    background: rgba(255,255,255,0.04);
+}
+
+.tech-num {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    left: 10%;
+}
+
+.tech-active {
+    color: hsl(230, 35%, 7%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.tech-description h2 {
+    color: hsl(231, 77%, 90%);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.tech-description {
+    position: relative;
+    left: 18%;
+    bottom: 18em;
+}
+
+.tech-description p {
+    position: relative;
+    margin-right: 67%;
+    font-size: 22px;
+    color: hsl(231, 77%, 90%);
+    bottom: 40px;
+}
+
+.tech-description h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    bottom: 28px;
+    position: relative;
+}
+
+.tech-transport {
+    position: relative;
+    top: 40px;
+}
+
+.technology-description {
+    position: relative;
+    bottom: 73%;
+}
+
+.tech-img img {
+    position: relative;
+    left: 60%;
+    width: 40vw;
+}
+
+@media (max-width: 768px) {
+    #container {
+        background: url(assets/home/background-home-tablet.jpg);
+        background-size: cover;
+        overflow: auto;
+        height: 150vh;
+        background-position: center;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .nav-bar {
+        width: 65vw;
+        margin-left: 34.9%;
+        left: 0;
+    }
+
+    .nav-bar ul {
+        gap: 5%;
+        font-size: 15px;
+        position: relative;
+        left: 1px;
+    }
+
+    .body-container p {
+        right: 0;
+        padding-inline: 16%;
+    }
+
+    .body-container {
+        left: 0;
+        top: 50px;
+        text-align: center;
+    }
+
+    .btn {
+        bottom: 4em;
+        left: 0;
+        width: 30vw;
+        height: 36vh;
+    }
+
+    .nav-bar ul span {
+        display: none;
+    }
+
+    .destination-container {
+        background: url(assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+        overflow: auto;
+    }
+
+    .description {
+        top: 11%;
+        bottom: 0;
+    }
+
+    .destination-nav a {
+        left: 10.5rem;
+    }
+
+   .heading {
+        text-align: center;
+        left: 0;
+        bottom: 46px;
+        font-size: 5em;
+        margin-bottom: 4rem;
+    } 
+
+   .img-moon {
+        left: 0;
+        top: 10%;
+        display: flex;
+        justify-content: center;
+   }
+
+   .moon-description {
+        left: 0;
+        text-align: center;
+        padding-inline: 16%;
+   }
+
+   .sub-heading {
+        bottom: 35rem;
+        font-size: 15px;
+   }
+
+   .days-time {
+        left: 0;
+        justify-content: center;
+   }
+
+   .line2 {
+        left: 18%;
+        width: 66vw;
+    }
+
+    .crew-container {
+        background: url(assets/crew/background-crew-tablet.jpg);
+        background-size: cover;
+        overflow: auto;
+        height: 100vh;
+        padding-right: 10%;
+    }
+
+    .crew-img {
+        text-align: center;
+    }
+
+    .crew-img img {
+        width: 50vw;
+        left: 0;
+        bottom: 0;
+        top: 22.5em;
+    }
+
+    .crew-description {
+        bottom: 77%;
+        text-align: center;
+    }
+
+    .crew-specialist-description {
+        bottom: 83%;
+        text-align: center;
+    }
+
+    .crew-container h2 {
+        font-size: 20px;
+        right: 35%;
+        position: relative;
+        top: 12px;
+    }
+
+    .commander, .engineer, .pilot, .specialist h3 {
+        font-size: 25px;
+    }
+
+    .crew-container h1 {
+        font-size: 40px;
+    }
+
+    .commander-description, 
+    .pilot-description, 
+    .specialist-description, .engineer-description {
+        right: 0;
+        padding-inline: 17%;
+    }
+
+    .crew-options {
+        justify-content: center;
+    }
+
+    .options-link {
+        width: 3vw;
+    }
+
+    .crew-container .nav-bar {
+        margin-left: 38.7%;
+    }
+
+    .specalist-cpntainer, .crew-img img {
+        width: 45vw;
+        left: -20%;
+    }
+
+    .crew-pilot-img img {
+        width: 57vw;
+        left: 0;
+        bottom: 0;
+        top: 25.5em;
+    }
+
+    .crew-engineer-img img {
+        width: 65vw;
+        left: 0;
+        bottom: 0;
+        top: 25.5em;
+    }
+
+    .technology-container {
+        background: url(assets/technology/background-technology-tablet.jpg);
+        background-size: cover;
+        overflow: auto;
+        height: 100vh;
+        padding-right: 16%;
+    }
+
+    .tech-img img {
+        width: 100vw;
+        height: 50vh;
+        left: 0%;
+        top: 51px;
+    }
+
+    .technology-description {
+        text-align: center;
+        bottom: 0;
+    }
+
+    .technology-container .nav-bar {
+        margin-left: 41.4%;
+    }
+
+    .technology-description .sub-heading {
+        bottom: 21em;
+        left: -23%;
+    }
+
+    .technology-description p {
+        margin: 0;
+        font-size: 17px;
+        padding-inline: 6%;
+    }
+
+    .tech-description {
+        bottom: 0;
+    }
+
+    .tech-num {
+        flex-direction: row;
+        justify-content: center;
+        left: 18%;
+    }
+
+    .tech-options {
+        width: 10vw;
+        height: 13vh;
+    }
+}
+
+.menu-icon, .close-icon {
+    display: none;
+}
+
+.nav-bar-mobile {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    #container {
+        background: url(assets/home/background-home-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        /* overflow: hidden; */
+    }
+
+    .menu-icon, .close-icon {
+        display: block;
+    }
+
+    .menu-icon img {
+        position: relative;
+        left: 80%;
+        bottom: 12px;
+        width: 9vw;
+        cursor: pointer;
+    }
+
+    .body-container p {
+        padding-inline: 6%;
+    }
+
+    .btn {
+        width: 52vw;
+        height: 30vh;  
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar-mobile {
+        display: none;
+        position: fixed; /* Position the mobile navigation bar fixed on the screen */
+        top: 0;
+        left: 36%;
+        width: 164%;
+        height: 100%;
+        background: rgba(255,255,255,0.04); /* Add a background color with some transparency */
+        backdrop-filter: blur(4.77rem);
+        z-index: 1000; /* Use a high z-index to make sure it's above other content */
+    }
+
+    .mobile-menu-active .nav-bar-mobile {
+        display: block;
+    }
+
+    .nav-bar-mobile ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .close-icon img {
+        position: relative;
+        top: -12em;
+        left: 20px;
+    }
+
+    .nav-bar-mobile li {
+        position: relative;
+        top: 40px;
+    }
+
+    .destination-container {
+        background: url(assets/destination/background-destination-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        /* overflow: hidden; */
+    }
+
+    .img-moon img {
+        width: 90vw;
+    }
+
+    .sub-heading {
+        bottom: 28rem;
+        font-size: 11px;
+        text-align: center;
+        left: 0;
+    }
+
+    .description {
+        top: 15%;
+    }
+
+    .destination-nav a {
+        left: 0;
+    }
+
+    .moon-description {
+        padding-inline: 5%;
+    }
+
+    .line2 {
+        width: 90vw;
+        left: 20px;
+    }
+
+    .days-time p {
+        font-size: 25px;
+    }
+
+    .time {
+        position: relative;
+        left: 10%;
+    }
+
+    .days, .day {
+        position: relative;
+        right: 5%;
+    }
+
+    .crew-img img {
+        top: 48px;
+        width: 82vw;
+        left: 12px;
+    }
+
+    .crew-description {
+        bottom: 0;
+    }
+
+    .crew-container h2 {
+        font-size: 15px;
+        right: 0;
+        top: -28.5em;
+    }
+
+    .commander-description, 
+    .pilot-description, 
+    .specialist-description, .engineer-description {
+        padding: 0;
+        font-size: 18px;
+        right: 5px;
+        top: 2em;
+    }
+
+    .crew-container h1 {
+        position: relative;
+        right: 5px;
+        font-size: 30px;
+    }
+
+    .crew-options {
+        top: -15em;
+    }
+
+    .commander {
+        position: relative;
+        top: 2em;
+    }
+
+    .options-link {
+        width: 8vw;
+    }
+
+    .specialist-description {
+        padding: 23px;
+        right: 5%;
+        top: -1em;
+    }
+
+    .crew-specialist h2 {
+        top: -35.5em;
+    }
+
+    .crew-specialist {
+        top: 4em;
+    }
+
+    .specialist-options {
+        top: -20.5em;
+    }
+
+    .crew-pilot-img img {
+        top: 48px;
+        width: 90vw;
+        left: 12px;
+    }
+
+    .crew-pilot {
+        top: 2em;
+    }
+
+    .pilot-options {
+        top: -17em;
+    }
+
+    .crew-engineer-img img {
+        top: 48px;
+        width: 95vw;
+        left: 12px;
+    }
+
+    .engineer-description {
+        padding: 23px;
+        right: 5%;
+        top: -1em;
+    }
+
+    .crew-engineer {
+        top: 4em;
+    }
+
+    .engineer-options {
+        top: -20em;
+    }
+
+    .technology-description .sub-heading {
+        bottom: 26em;
+        left: 26px;
+    }
+
+    .tech-img img {
+        height: 35vh;
+    }
+
+    .tech-options {
+        width: 19vw;
+        height: 9vh;
+        right: 8%;
+        position: relative;
+    }
+
+    .tech-description {
+        left: 11%;
+    }
+
+    .tech-description p {
+        margin-right: -19%;
+        right: 12%;
+    }
+
+    .technology-container .menu-icon img {  
+        left: 96%;
+    }
+}
